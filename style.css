@@ -21,8 +21,6 @@ h1 {
     font-family: 'Playfair Display';
   } 
 
-
-
 mark {
     background-color: white;
     padding: 10px;
@@ -48,7 +46,7 @@ p {
 
 a {
     color:rgb(112, 106, 97);
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: x-large;
     font-weight: lighter;
 }
@@ -86,7 +84,7 @@ a {
 
 
 .button {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(255, 255, 255);
     padding: 15px 32px;
     text-align: center;
