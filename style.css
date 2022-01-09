@@ -1,8 +1,8 @@
-/* 
+ 
 html {
 
      scroll-behavior: smooth; 
-} */
+} 
 
 body {
     font-family:'Acumin Pro', sans-serif; 
@@ -28,7 +28,8 @@ mark {
 
 h2 {
     font-family:'Playfair Display';
-    padding: 20 px; 
+    text-align:center;
+    padding: 2vw;
 
 }
 
@@ -107,8 +108,42 @@ a {
 /* .topnav a.active {
     color: white; }
   
-
  
 /* .boxed {
     background-color: green;
 } */
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 1vw; /* Some padding */ 
+    border: 1px solid rgb(122, 88, 65); /* Gray border */
+    border-radius: 0; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 1vw; /* Add a top margin */
+    margin-bottom: 3vw; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #c59f8f;
+    color: white;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 0;
+    align-items:center;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker color */
+  input[type=submit]:hover {
+    background-color: #8b6a57;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 0;
+    background-color: #ffffff;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1vw;
+  }

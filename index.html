@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <title> KONK KONE</title>
@@ -9,7 +11,7 @@
 <body>
     <div class="topnav flex-parent">
         <h1 class="flex-child">Konk Kone</h1>
-        <a style="padding: 30px;" class="flex-child" href="mailto:kyokokohno@gmail.com">Email Konk</a>
+        <a style="padding: 30px;" class="flex-child" href="#contactformtitle">Contact Konk</a>
         <a style="padding: 30px;" class="flex-child" href="https://www.instagram.com/konkkone/">Instagram</a>
         <a style="padding: 30px;" class="flex-child"
             href="https://www.youtube.com/channel/UCUOtXmgDCvxHIsomP9jBOWA/featured">YouTube</a>
@@ -17,50 +19,82 @@
 
     <div class="flex-parent">
         <div class="flex-child">
-            <p style="font-size: xx-large; margin-left: 20px; margin-top: 100px;">
+            <p style="font-size: xx-large; margin-left: 5vw; margin-top: 10vw;">
                 I am a 22-year old
                 <b>pianist</b> based in <b>Lakeview, Chicago</b>.
                 I take gigs on the <u>weekends</u> for weddings, bars, events, and more.
             </p>
-            <button style = "margin-left: 200px;" class = "button">Inquire Konk now</button>
+            <form action="#contactformtitle">
+                <button style="margin-left: 15vw;" class="button">Inquire Konk now</button>
+            </form>
         </div>
-        <!-- <img class = "flex-child" src="image1.jpg" style = "width: 30%;" />
-            <img class = "flex-child"src="image1.jpg" style = "width: 30%;" /> -->
-        <img class="flex-child" src="image1.jpg" style="width: 30%; margin-right: 20px; padding: 30px;" />
+        <img class="flex-child" src="image1.jpg" style="width: 30%; max-width:100%; 
+        height:auto; margin-right: 5vw; padding: 5vw;" />
     </div>
     <!-- <div class = "boxed"> box green</div>  -->
-    <div style="text-align:center; background-color: rgb(233, 215, 210);  padding: 20px; margin-top: 20px;">
+    <div style = "background-color: rgb(233, 215, 210); padding: 5vw; text-align: center;">
         <h2><mark> What I can do for you </mark></h2>
-        <div style="font-size: x-large; margin-left: 300px; margin-right: 300px;">
-            <p>I do improv, sight-reading, and arrangements of all different genres. </p>
+        <div style="font-size: x-large; margin-left: 10vw; margin-right: 10vw;">
+            <p>I do accompaniment, improv, and personal arrangements of all different genres. </p>
             <p>I am classically trained in piano for over 16 years. My repertoire ranges from Bach to Ravel, Chopin to
                 Rachmaninoff, Gershwin to Earl Wild. </p>
-            <p>My secret power is that I can listen to a piece I’ve never heard of and make my own
+            <p>I can listen to a piece I’ve never heard of and make my own
                 improvised arrangement within 10 minutes. </p>
             <p>Your regular performer cancelled last minute? No problem. I’ll be able to assist
-                with any events in the Chicago area accessible via public transit.</p>
+                with any events in the Chicago area accessible via public transit. </p>
         </div>
     </div>
-    <div style="background-image: url('blueback.jpeg'); padding: 100px">
-        <h2 style="text-align: center;"><mark> My Background </mark></h2>
-        <ul style="margin-left: 200px; font-size: x-large;">
+    <div style="background-image: url('blueback.jpeg'); padding: 5vw;">
+        <h2><mark> My Background </mark></h2>
+        <ul style="margin-left: 8vw; font-size: x-large;">
             <li>Northwestern University alumni (BM Piano Performance ‘21)</li>
             <br>
             <li>Royal Conservatory of Music alumni ‘17</li>
             <br>
-            <li>I won an International Piano Competition held in the Netherlands when I was 16</li>
+            <li>Winner of International Piano Competition for Young Musicians (Netherlands, 2016)</li>
+            <br>
+            <li>Over 10 years of preparatory and professional experience in chamber music, accompaniment, and solo performances </li>
             <br>
             <li>Originally from Tokyo, Japan</li>
         </ul>
     </div>
 
-    <div style="padding: 1000 px;">
-        <p style=" text-align: center; margin-left: 400px; margin-right: 400px; font-size: x-large;">
-            You are invited to contact me with the date, location, and description of your next event.
-            I will respond within <b>12 hours</b>.
-            <br>
-            Email: <a style="font-weight: bolder; text-decoration: none;" href="mailto: kyokokohno#gmail.com">kyokokohno@gmail.com</a>
+    <div style="padding: 5vw;">
+        <p style=" text-align: center; margin-left: 10vw; margin-right: 15vw; font-size: x-large;">
+            Need a pianist in Chicago for your next event? Contact me with the date,
+            location, and description of the event, and I will respond within <b>12 hours</b>.
         </p>
+    </div>
+
+
+    <div class="container" id="contactformtitle" style="font-family: 'Playfair Display'; color: rgb(121, 104, 94);">
+        <h1 style="text-align: center; color: rgb(160, 134, 123);"">Contact Form</h1>
+        <form method="post" action=" contactform.php">
+            <script src = "main.js"> </script>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Your name">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Your email address">
+
+
+            <label for="inquiry">Inquiry Type</label>
+            <select id="inquiry" name="inquiry">
+                <option value="wedding">Wedding Service</option>
+                <option value="accompaniment">Accompaniment</option>
+                <option value="other">Other Events</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Your event details" 
+            style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+       
+            </form>
     </div>
 
 
