@@ -1,23 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <head>
     <title> KONK KONE</title>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href = "favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
-    <div class="topnav flex-parent">
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="logo" style="float: left; font-size: xx-large; padding: 1.5vw; font-family: 'Playfair Display';">Konk Kone</a>
+        <a href="#form_6288">Contact Konk</a>
+        <a href="https://www.instagram.com/konkkone/">Instagram</a>
+        <a href="#https://www.youtube.com/channel/UCUOtXmgDCvxHIsomP9jBOWA/featured">YouTube</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- <div class="topnav flex-parent">
         <h1 class="flex-child">Konk Kone</h1>
         <a style="padding: 30px;" class="flex-child" href="#form_6288">Contact Konk</a>
         <a style="padding: 30px;" class="flex-child" href="https://www.instagram.com/konkkone/">Instagram</a>
         <a style="padding: 30px;" class="flex-child"
             href="https://www.youtube.com/channel/UCUOtXmgDCvxHIsomP9jBOWA/featured">YouTube</a>
-    </div>
+    </div> -->
 
-    <div class="flex-parent">
+    <div class="flex-parent" id="main">
         <div class="flex-child">
             <p style="font-size: xx-large; margin-left: 5vw; margin-top: 10vw;">
                 I am a 22-year old
@@ -28,13 +42,12 @@
                 <button style="margin-left: 15vw;" class="button">Inquire Konk now</button>
             </form>
         </div>
-        <img class="flex-child" src="image1.jpg" style="width: 30%; max-width:100%; 
-        height:auto; margin-right: 5vw; padding: 5vw;" />
+        <img class="flex-child" src="image1.jpg" />
     </div>
-    <!-- <div class = "boxed"> box green</div>  -->
-    <div style = "background-color: rgb(233, 215, 210); padding: 5vw; text-align: center;">
+
+    <div style="background-color: rgb(233, 215, 210); padding: 5vw; text-align: center;">
         <h2><mark> What I can do for you </mark></h2>
-        <div style="font-size: x-large; margin-left: 10vw; margin-right: 10vw;">
+        <div style="font-size: large; margin-left: 15vw; margin-right: 15vw;">
             <p>I do accompaniment, improv, and personal arrangements of all different genres. </p>
             <p>I am classically trained in piano for over 16 years. My repertoire ranges from Bach to Ravel, Chopin to
                 Rachmaninoff, Gershwin to Earl Wild. </p>
@@ -46,14 +59,15 @@
     </div>
     <div style="background-image: url('blueback.jpeg'); padding: 5vw;">
         <h2><mark> My Background </mark></h2>
-        <ul style="margin-left: 8vw; font-size: x-large;">
+        <ul style="margin-left: 7vw; font-size: large;">
             <li>Northwestern University alumni (BM Piano Performance ‘21)</li>
             <br>
             <li>Royal Conservatory of Music alumni ‘17</li>
             <br>
             <li>Winner of International Piano Competition for Young Musicians (Netherlands, 2016)</li>
             <br>
-            <li>Over 10 years of preparatory and professional experience in chamber music, accompaniment, and solo performances </li>
+            <li>Over 10 years of preparatory and professional experience in chamber music, accompaniment, and solo
+                performances </li>
             <br>
             <li>Originally from Tokyo, Japan</li>
         </ul>
@@ -65,13 +79,12 @@
             location, and description of the event, and I will respond within <b>12 hours</b>.
         </p>
     </div>
-   
-    <div class="inbound-form-wrapper" 
-    id="form_6288" 
-    data-path="https://app.99inbound.com/i/13eddf3b-e1ef-43d8-9310-7f168278230a" 
-    data-token="VqW6s7rIQMuS7J6mRZcSkgtt"></div>
 
-<!-- Only include this once in your webpage -->
+    <div class="inbound-form-wrapper" id="form_6288"
+        data-path="https://app.99inbound.com/i/13eddf3b-e1ef-43d8-9310-7f168278230a"
+        data-token="VqW6s7rIQMuS7J6mRZcSkgtt"></div>
+
+    <!-- Only include this once in your webpage -->
     <script type="text/javascript" src="https://app.99inbound.com/99inbound.js"></script>
 
     <!--  
@@ -109,7 +122,10 @@
 </body>
 
 
+<footer>
+<p style = "text-align: center; color:rgb(156, 144, 142); font-size: small;">Website made by Konk Kone</p>
 
+</footer>
 
 
 
